@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    color: white;
+}
+.page1{
+    position: absolute;
+    top: 0px;
+    background: url('intro.mp4') no-repeat center center/cover;
+    height: 100vh;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.page1 nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 6vh;
+    right: 4vw;
+    left: 4vw;
+    top: 5vh;
+    box-sizing: border-box;
+    z-index: 9;
+}
+.right ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+}
+.logo{
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Archivo', sans-serif;
+    width: 10vw;
+}
+.right li{
+    list-style: none;
+    margin: 0vh 1vw;
+    font-size: 1.8vh;
+}
+.btn{
+    height: 4.5vh;
+    width: 9.4vw;
+    background-color: #2c71f6;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vh;
+}
+.pay{
+    position: absolute;
+    top: 20vh;
+    height: 75vh;
+    width: 90vw;
+    left: 2vw;
+    right: 8vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0vh 8.5vw;
+    font-size: 9vh;
+    font-weight: bold;
+}
+.small{
+    font-size: 2vh;
+    margin: 4vh 0vw;
+}
+/* How to add video in the background */
+#video-background{
+    position: absolute;
+    right: 0vw;
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    /* Ensures that the video covers the page  */
+    object-fit: cover;
+}
+.lastpage{
+    position: absolute;
+    right: 0vw;
+    left: 0vw;
+    top: 444vh;
+    height: 100vh;
+    width: 100vw;
+}
+#video-background2 {
+    position: absolute;
+    right: 0vw;
+    left: 0vw;
+    top: 0vh;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    object-fit:cover;
+}
+.lastpage .btn{
+    margin: 2vh 0vw;
+    font-weight: lighter;
+}
+.foot{
+    position: absolute;
+    bottom: 5vh;
+    left: 4vw;
+    right: 4vw;
+}
+.foot ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+.foot li{
+    font-size: 1.6vh;
+}
+#c{
+    color: gray;
+}
+.lastpage .pay{
+    top: 12vh;
+}
+.slider {
+    position: absolute;
+    top: 394vh;
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+.slider-content {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    animation: slide 10s linear infinite;
+    background: linear-gradient(to right, transparent, white, transparent);
+
+}
+  
+.slider img {
+    width: 50%;
+    height: 100%;
+}
+  
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+.pg4{
+    position: absolute;
+    top: 324vh;
+    left: 0vw;
+    right: 0vw;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.pg4 div{
+    color: rgb(62, 62, 62);
+}
+.heading div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 9vh;
+    color: black;
+}
+.heading{
+    margin: 0vh 0px 4vh 0px;
+}
+.page2{
+    position: absolute;
+    top: 100vh;
+    right: 0vw;
+    left: 0vw;
+    background-color: rgb(22 20 20);
+    height: 224vh;
+    width: 100vw;
+}
+.part1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part1 .heading{
+    height: 58vh;
+    margin: 0%;
+}
+.part1 .heading  div{
+    color: white;
+    font-size: 7vw;
+}
+div span{
+    color: #2c71f6;
+    display: inline;
+}
+.part1 video{
+    height: 10vw;
+    width: 10vw;
+} 
+.parag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.parag>div{
+    margin: 0vh 3vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2{
+    height: 24vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2>div{
+    margin: 0vh 2vw;
+}
+.part2>div>h3{
+    margin: 0vh 0vw 1.8vh 0vw;
+    font-size: 3vh;
+}
+.part2>div>div{
+    font-size: 1.9vh;
+    padding: 0.4vh 0vw;
+}
+.part3{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+.part3 video{
+    height: 25vw;
+    width: 25vw;
+    margin: 0vh 8vw 0vh 0vw;
+}
+.title{
+    font-weight: bold;
+    font-size: 4.4vw;
+    margin: 0vh 0vw 3vh 0vw;
+}
+.part3 div{
+    margin: 0vh 6vw 0vh 0vw;
+}
+  
